@@ -26,5 +26,5 @@ if __name__ == "__main__":
         "pagenum": "1",
         "pagesize": "20"
     }
-    a=RunMethod(url,data,"GET")
+    a=RunMethod(url, data, "GET")
     print(a)
