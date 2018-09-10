@@ -3,7 +3,7 @@ import json
 
 class RunMethod:
     def __int__(self, url, data, method):
-        res = self.send_request(url, data, method)
+        self.res = self.send_request(url, data, method)
         return res
     def send_get(self, url, data):
         res = requests.get(url, data).json()
@@ -26,5 +26,5 @@ if __name__ == "__main__":
         "pagenum": "1",
         "pagesize": "20"
     }
-    a=RunMethod(url, data, "GET")
+    a = RunMethod(url, data, "GET").res
     print(a)
