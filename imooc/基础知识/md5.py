@@ -1,6 +1,7 @@
 import hashlib
 
 str = '869654023368628'
+str = input('输入：')
 
 hl = hashlib.md5()
 

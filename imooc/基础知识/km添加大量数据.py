@@ -1,4 +1,3 @@
-"""往数据库中循环插入大量数据"""
 import mysql.connector
 import random
 user = '166cai'
